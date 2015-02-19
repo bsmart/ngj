@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
+body {
+	background: #1db0e4;
+}
+
+header {
+	background: whitesmoke;
+	padding: 20px 0;
+}
+
+.stripe {
+    height: 0px;
+    border-bottom: solid 4px #f4913f;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+iframe { display:block; }
+
+.branding {
+	text-align: center;
+	padding: 1.3em 1em 0;
+	max-width: 400px;
+	margin: auto;
+}
+
+.video-wrapper {
+	width: 100%;
+	background: #1db0e4;
+}
+
+.video-container {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 30px 30px 0;
+}
+
+.social-container {
+	text-align: center;
+	width: 400px;
+	margin: auto;
+}
+
+i {
+	color: #f4913f;
+	font-size: 4em;
+	padding: 30px 0;
+	margin-right: 20px;
+}
+
+.fa-twitter {
+	margin-right: 0;
+}
+
+footer {
+	height: 60px;
+}
+
+.email {
+/*	background: #f4913f;*/
+	text-align: center;
+	padding: 30px 0;
+}
+
+.email a {
+	font-size: 2em;
+	text-decoration: none;
+	line-height: 2.1em;
+	font-family: 'Arimo', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: whitesmoke;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+       -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+         -o-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+@media ( max-width: 768px ) {
+	.email a { font-size: 1em; }
+}
