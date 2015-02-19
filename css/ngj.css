@@ -92,3 +92,7 @@ footer {
 @media ( max-width: 768px ) {
 	.email a { font-size: 1em; }
 }
+
+#instafeed {
+	display: flex;
+}

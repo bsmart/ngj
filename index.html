@@ -12,33 +12,56 @@
 <body>
 	<div class="stripe"></div>
 	<div class="wrapper">
-	<header>
-		<div class="branding">
-			<img src="img/nextgenjam.png" alt="Next Generation Jam">
-		</div>
-		<div class="social-container">
-			<a href="http://instagram.com/nextgenerationjam"><i class="fa fa-instagram"></i></a>
-			<a href="https://twitter.com/Nextgenjam"><i class="fa fa-twitter"></i></a>
-		</div>
-	</header>
-		<div class="video-wrapper">
+		<header>
+			<div class="branding">
+				<img src="img/nextgenjam.png" alt="Next Generation Jam">
+			</div>
+			<div class="social-container">
+				<a href="http://instagram.com/nextgenerationjam"><i class="fa fa-instagram"></i></a>
+				<a href="https://twitter.com/Nextgenjam"><i class="fa fa-twitter"></i></a>
+			</div>
+		</header>
+<!-- 		<div class="video-wrapper">
 			<div class="video-container">
 				<iframe src="//player.vimeo.com/video/95447641?portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/95447641"></p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<footer>
+		<div id="instafeed"></div>
 		<div class="email"><a href="mailto:info@nextgenjam.com">Contact Next gen Jam</a></div>
 	</footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/libs/instafeed.min.js"></script>
 <script>
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".video-container").fitVids();
   });
 </script>
+ <script type="text/javascript">
+//     var feed = new Instafeed({
+//         get: 'user',
+//         userId: 332670236,
+//         template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+//     });
+//     feed.run();
+// </script>
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 1150450318,
+        accessToken: '1150450318.467ede5.261feb84591e4a708f20b937478f9d3f',
+        template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+        resolution: 'standard_resolution'
+    });
+    feed.run();
+</script>
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
